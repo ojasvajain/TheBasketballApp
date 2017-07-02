@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:background="#FFFFFF"
+              android:layout_width="match_parent"
+              android:layout_height="30dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:visibility="invisible"
+        android:id="@+id/tv_id"/>
+
+    <TextView
+        android:id="@+id/tv_position"
+        android:layout_width="15dp"
+        android:paddingTop="5dp"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:layout_marginLeft="3dp"
+        android:textSize="12sp"
+        android:textColor="#000000"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/iv_team"/>
+
+    <TextView
+        android:id="@+id/tv_team_name"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Los Angeles Lakers"
+        android:layout_marginLeft="6dp"
+        android:textSize="14sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tv_won"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:text="10"
+        android:textSize="12sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tv_lost"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:text="25"
+        android:layout_marginLeft="15dp"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:id="@+id/tv_pct"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="72.4"
+        android:layout_marginLeft="9dp"
+        android:textSize="12sp"
+        android:textColor="#000000"/>
+
+
+    <TextView
+        android:id="@+id/tv_avgp"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="9.5"
+        android:layout_marginLeft="13dp"
+        android:textSize="12sp"
+        android:textColor="#000000"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/iv_vertical_line"
+        android:src="@drawable/vertical_line"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="150dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/iv_vertical_line"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/iv_vertical_line"
+        android:layout_alignEnd="@+id/iv_vertical_line"
+        android:layout_alignBottom="@+id/iv_vertical_line">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="75.2"
+            android:textSize="50sp"
+            android:paddingBottom="5dp"
+            android:id="@+id/tv_pct"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/pct"
+            android:textSize="25sp"
+            android:id="@+id/textView"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/iv_vertical_line"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/iv_vertical_line">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_position"
+                android:text="Position: 14"
+                android:textColor="#000000"
+                android:paddingLeft="18dp"
+                android:textSize="30sp">
+            </TextView>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_horizontal_line"
+                android:src="@drawable/horizontal_line"
+                android:layout_gravity="center_horizontal"/>
+
+            <TableRow
+                android:paddingTop="10dp"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_played"
+                    android:text="P:15"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_won"
+                    android:text="W:10"/>
+
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_lost"
+                    android:text="L:4"/>
+
+
+
+            </TableRow>
+
+        </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

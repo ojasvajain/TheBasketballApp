@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">The Basketball App</string>
+    <string name="enter_serverip">Enter IP Address of the Server</string>
+    <string name="start">Start</string>
+    <string name="connect_unsucessful">Connection could not established with the server. Check Log for more information.</string>
+    <string name="check_connect">Checking Connection...</string>
+    <string name="connect_successful">Connection was successful</string>
+    <string name="choose_team">Choose Your Favourite Team</string>
+    <string name="username">MOBILEADMIN</string>
+    <string name="password">Abc0123deff</string>
+    <string name="default_text">Default Text</string>
+    <string name="vs">VS</string>
+    <string name="next_match">Next Match</string>
+    <string name="form">Recent Form</string>
+    <string name="coach">Coach</string>
+    <string name="pct">Win %</string>
+    <string name="plays_for">Plays For</string>
+    <string name="schedule_title">Schedule</string>
+    <string name="team_detail_title">Team Details</string>
+    <string name="choose_team_title">Teams</string>
+    <string name="player_details_title">Player Details</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="assists">AST:</string>
+    <string name="rebounds">REB:</string>
+    <string name="steals">STE:</string>
+    <string name="points">PTS</string>
+
+
+</resources>

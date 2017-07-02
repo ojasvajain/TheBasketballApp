@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="#FFFFFF"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/stephen_curry"
+        android:id="@+id/iv_player_photo"
+        />
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/iv_logo"
+        android:src="@drawable/golden_state_warriors_small"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="59.1"
+        android:id="@+id/tv_stat"
+        android:layout_marginRight="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_alignTop="@+id/iv_logo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="PTS"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:id="@+id/tv_stat_label"
+        android:layout_below="@+id/tv_stat"
+        android:layout_alignLeft="@+id/tv_stat"
+        android:layout_alignStart="@+id/tv_stat"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:visibility="invisible"
+        android:id="@+id/tv_player_id"
+        android:layout_below="@+id/iv_logo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stephen Curry"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:id="@+id/tv_player_name"
+        android:layout_below="@+id/iv_player_photo"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

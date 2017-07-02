@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_playerlist"
+    android:background="@drawable/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.endeavour.ojasva.thebasketballapp.PlayerListActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:theme="@style/Theme.AppCompat" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Players"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:id="@+id/rv_players_list"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"></android.support.v7.widget.RecyclerView>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:src="@drawable/throbber_bounce"
+        android:id="@+id/throbber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#FFFFFF"
+       android:layout_below="@+id/toolbar"
+       android:id="@+id/linearLayout">
+       <SearchView
+           android:id="@+id/search"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+           android:paddingLeft="20dp"
+           android:paddingRight="20dp"
+           android:textSize="16sp"
+           android:hint="Search here"
+           android:layout_below="@+id/toolbar"
+           android:layout_centerHorizontal="true"/>
+
+   </LinearLayout>
+
+
+</RelativeLayout>

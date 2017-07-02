@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/next_match"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:id="@+id/tv_label"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Rose Bowl Stadium"
+        android:textColor="#000000"
+        android:id="@+id/tv_venue"
+        android:layout_below="@+id/tv_label"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/tv_venue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/iv_home_logo"
+            android:src="@drawable/atlanta_hawks"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Los Angeles Lakers"
+            android:id="@+id/tv_home_team"
+            android:layout_below="@+id/iv_home_logo"
+            android:layout_alignLeft="@+id/iv_home_logo"
+            android:layout_alignStart="@+id/iv_home_logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="102"
+            android:textColor="#000000"
+            android:id="@+id/tv_home_score"
+            android:textSize="30sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_home_logo"
+            android:layout_toEndOf="@+id/iv_home_logo"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/iv_away_logo"
+            android:layout_alignTop="@+id/iv_home_logo"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/atlanta_hawks"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Chicago Bulls"
+            android:id="@+id/tv_away_team"
+            android:layout_below="@+id/iv_away_logo"
+            android:layout_toRightOf="@+id/tv_away_score"
+            android:layout_toEndOf="@+id/tv_away_score"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="102"
+            android:id="@+id/tv_away_score"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:layout_marginRight="23dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_away_logo"
+            android:layout_toStartOf="@+id/iv_away_logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Los Angeles"
+            android:textColor="#000000"
+            android:id="@+id/tv_city"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/tv_game_id"
+            android:visibility="invisible"
+            android:layout_alignBottom="@+id/tv_home_score"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:src="@drawable/background_line"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_date"
+            android:text="29/01/1996"
+            android:textColor="#000000"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:visibility="invisible"
+        android:id="@+id/tv_id_home_team"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_toLeftOf="@+id/tv_venue"
+        android:layout_toStartOf="@+id/tv_venue"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:visibility="invisible"
+        android:id="@+id/tv_id_away_team"
+        android:layout_alignTop="@+id/tv_date"
+        android:layout_toRightOf="@+id/tv_venue"
+        android:layout_toEndOf="@+id/tv_venue"/>
+
+
+</RelativeLayout>

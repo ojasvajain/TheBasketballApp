@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      xmlns:thebasketballapp="http://schemas.android.com/apk/res-auto"
+      tools:context="com.example.toolbar.TeamDetailsActivity">
+
+    <item
+        android:id="@+id/ab_schedule"
+        thebasketballapp:showAsAction="always"
+        android:icon="@drawable/ic_date_range_white_36dp"
+        android:title="@string/schedule_title">
+    </item>
+
+
+
+</menu>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:thebasketballapp="http://schemas.android.com/apk/res-auto"
+      xmlns:app="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/ab_voice"
+        thebasketballapp:showAsAction="always"
+        android:icon="@drawable/ic_keyboard_voice_white_36dp"
+        android:title="Speak!">
+    </item>
+
+</menu>

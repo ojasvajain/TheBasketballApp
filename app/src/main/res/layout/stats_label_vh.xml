@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/label_vh"
+              android:background="#FFFFFF"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv_gap"
+        android:layout_width="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="fitXY"
+        android:layout_height="65dp"/>
+
+    <TextView
+        android:id="@+id/tv_stats_label"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="Highest Points Per Game"/>
+
+
+
+</LinearLayout>

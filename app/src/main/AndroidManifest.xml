@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.endeavour.ojasva.thebasketballapp" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppCompatTheme" >
+
+        <activity android:name=".MainActivity" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <activity android:name=".ChooseTeamActivity" >
+        </activity>
+        <activity android:name=".TeamDetailsActivity" >
+        </activity>
+        <activity android:name=".StandingsActivity" >
+        </activity>
+        <activity android:name=".PlayerDetailsActivity" >
+        </activity>
+        <activity android:name=".ScheduleActivity" >
+        </activity>
+        <activity android:name=".MatchPerformanceActivity" >
+        </activity>
+        <activity android:name=".HomeActivity" >
+        </activity>
+        <activity android:name=".PlayerListActivity" >
+        </activity>
+        <activity android:name=".MatchesActivity" >
+        </activity>
+        <activity android:name=".CreateAccountActivity" >
+        </activity>
+    </application>
+
+</manifest>
